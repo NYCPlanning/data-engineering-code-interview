@@ -46,7 +46,7 @@ We love the NYC 311 service and the open data products that come with it. In thi
 
 ### Task 1: Download data
 
-Write a python script/notebook to download all service requests openned last week (7 days) and store the data in a csv named `raw.csv` in a folder called `data`.
+Write a python script/notebook to download all service requests openned and has **HPD** as the responding agency **last week** (7 days) and store the data in a csv named `raw.csv` in a folder called `data`.
 
 ### Task 2: Data Aggregation
 
