@@ -1,5 +1,18 @@
 # Data Engineering Code Interview
 
+## Table of Content
+
+- [About](#-hi-there)
+- [What we are looking for](#what-we-are-looking-for)
+- [Introduction](#introduction)
+  - [Task 1: Download data](#task-1-download-data)
+  - [Task 2: Data Aggregation](#task-2-data-aggregation)
+  - [Task 3: Data Visualization](#task-3-data-visualization)
+  - [Task 4: Spatial Data Processing](#task-4-spatial-data-processing)
+  - [Task 5: SQL](#task-5-sql)
+  - [Task 6: Spatial SQL](#task-6-spatial-sql)
+- [Resources](#resources)
+
 ## 👋 Hi there
 
 Welcome to the Data Engineering code interview! This small data challenge is designed to test out your skills in python, sql, git, and geospatial data processing. The challenge will go from easy to difficult, there's no preassure to finish all the tasks, so try your best and get as far as you can!
@@ -7,10 +20,6 @@ Welcome to the Data Engineering code interview! This small data challenge is des
 To start this challenge, create a new **private** repo under your github username. We would like you to include all the code, notes, visualizations, and data inside of the repo. You will have **48 hours** to complete this data challenge.
 
 > ⚠️ Note: **the repo has to be <ins>private</ins>, otherwise you will be automatically <ins>disqualified</ins>**. Also we will check your commit timestamp to only account for the first 48 hours of coding activities.
-
-## Introduction
-
-We love the NYC 311 service and the open data products that come with it. In this challenge, you will use **[311 Service Requests from 2010 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)** on NYC Open Data, write an ETL pipeline and produce some data insight.
 
 ## What we are looking for
 
@@ -32,6 +41,10 @@ Your code interview will be evaluated based on your repo, so make sure all files
   - We want to see how you manage a multi-part project and how you break down the tasks.
   - Feel free to open up issues for yourself / make pull requests and etc so that your code progress is captured and documented.
   - we highly **discourage** lumpped commits.
+
+## Introduction
+
+We love the NYC 311 service and the open data products that come with it. In this challenge, you will use **[311 Service Requests from 2010 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)** on NYC Open Data, write an ETL pipeline and produce some data insight.
 
 ### Task 1: Download data
 
