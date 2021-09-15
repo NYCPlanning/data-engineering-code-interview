@@ -1,18 +1,5 @@
 # Data Engineering Code Interview
 
-## Table of Content
-
-- [About](#-hi-there)
-- [What we are looking for](#what-we-are-looking-for)
-- [Introduction](#introduction)
-  - [Task 1: Download data](#task-1-download-data)
-  - [Task 2: Data Aggregation](#task-2-data-aggregation)
-  - [Task 3: Data Visualization](#task-3-data-visualization)
-  - [Task 4: Spatial Data Processing](#task-4-spatial-data-processing)
-  - [Task 5: SQL](#task-5-sql)
-  - [Task 6: Spatial SQL](#task-6-spatial-sql)
-- [Resources](#resources)
-
 ## 👋 Hi there
 
 Welcome to the Data Engineering code interview! This small data challenge is designed to test out your skills in python, sql, git, and geospatial data processing. The challenge will go from easy to difficult, there's no preassure to finish all the tasks, so try your best and get as far as you can!
@@ -41,6 +28,17 @@ Your code interview will be evaluated based on your repo, so make sure all files
   - We want to see how you manage a multi-part project and how you break down the tasks.
   - Feel free to open up issues for yourself / make pull requests and etc so that your code progress is captured and documented.
   - we highly **discourage** lumpped commits.
+
+## Table of Content
+
+- [Introduction](#introduction)
+  - [Task 1: Download data](#task-1-download-data)
+  - [Task 2: Data Aggregation](#task-2-data-aggregation)
+  - [Task 3: Data Visualization](#task-3-data-visualization)
+  - [Task 4: Spatial Data Processing](#task-4-spatial-data-processing)
+  - [Task 5: SQL](#task-5-sql)
+  - [Task 6: Spatial SQL](#task-6-spatial-sql)
+- [Resources](#resources)
 
 ## Introduction
 
