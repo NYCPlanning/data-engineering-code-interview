@@ -32,7 +32,7 @@ Your code interview will be evaluated based on your repo, so make sure all files
 ## Table of Content
 
 - [Introduction](#introduction)
-  - [Task 1: Download data](#task-1-download-data)
+  - [Task 1: Data Download](#task-1-data-download)
   - [Task 2: Data Aggregation](#task-2-data-aggregation)
   - [Task 3: Data Visualization](#task-3-data-visualization)
   - [Task 4: Spatial Data Processing](#task-4-spatial-data-processing)
@@ -44,11 +44,11 @@ Your code interview will be evaluated based on your repo, so make sure all files
 
 We love the NYC 311 service and the open data products that come with it. In this challenge, you will use **[311 Service Requests from 2010 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)** on NYC Open Data, write an ETL pipeline, and produce some data insight.
 
-### Task 1: Download data
+### Task 1: Data Download
 
 Write a python script/notebook to download all service request records created in the **last week** (7 days) and has **HPD** as the responding agency, and store the data in a csv named `raw.csv` in a folder called `data`.
 
-### Task 2: Aggregate data
+### Task 2: Data Aggregation
 
 Create a time series table based on the `data/raw.csv` file we created from **Task 1** that has the following fields
 
@@ -58,7 +58,7 @@ Create a time series table based on the `data/raw.csv` file we created from **Ta
 
 Store this table in a csv under the `data` folder with a csv file name of your choice.
 
-### Task 3: Visualize data
+### Task 3: Data Visualization
 
 Create a multi-line plot to show the total service request counts by `created_date_hour` for each `complaint_type`. Make sure you store the image of the plot in the `data` folder as a `.png` file.  
 
