@@ -12,9 +12,30 @@ To start this challenge, create a new **private** repo under your github usernam
 
 We love the NYC 311 service and the open data products that come with it. In this challenge, you will use **[311 Service Requests from 2010 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9)** on NYC Open Data, write an ETL pipeline and produce some data insight.
 
+## What we are looking for
+
+Your code interview will be evaluated based on your repo, so make sure all files you have are stored in your repo. Specifically we are looking at:
+
+- **Project scafolding**: how you name, manage, and organize your files.
+- **Reproducibility**:
+  - Ideally if it runs on your machine, it would also run on mine.
+  - make sure you document any software dependency, and installation process.
+- **Code**:
+  - clean
+  - readable
+  - DRY (Don't Repeat Yourself)
+- **Documentation**:
+  - A comprehensive `README.md` on anything that we should know about this repo.
+  - clear instructions on commands to run code and what to expect.
+  - clear documentation for functions/processes in code.
+- **Project Management**:
+  - We want to see how you manage a multi-part project and how you break down the tasks.
+  - Feel free to open up issues for yourself / make pull requests and etc so that your code progress is captured and documented.
+  - we highly **discourage** lumpped commits.
+
 ### Task 1: Download data
 
-Write a python script/notebook to download all service requests openned last week (7 days) and store the data in a csv named `raw.csv` in a folder called `data`
+Write a python script/notebook to download all service requests openned last week (7 days) and store the data in a csv named `raw.csv` in a folder called `data`.
 
 ### Task 2: Data Aggregation
 
@@ -43,7 +64,7 @@ We ❤️ SQL! At Data Engineering, we deal with databases a lot and we write a 
 - load the `data/raw.csv` into a database of your choice, name the table `sample_311`, make sure this process is captured in a script.
 - perform the same aggregation in **Task 2** in SQL and store the results in a table (same name as the corresponding csv file)
 
-> Note: Depends on your preference, you can use [SQLite](https://docs.python.org/3/library/sqlite3.html) or [Postgres](https://www.postgresql.org/), please document your decisions and rationale.
+> Note: Depends on your preference, you can use or [Postgres](https://www.postgresql.org/) is prefered, however, if you are familiar with [SQLite](https://docs.python.org/3/library/sqlite3.html) (much easier to set up and use), you can use it too.
 
 ### Task 6: Spatial SQL
 
@@ -54,9 +75,14 @@ A lot of popular databases have geospatial extensions, which makes spatial data 
 - perform the same aggregation in **Task 4** and store the result in a table.
 - **Bonus**: export the table with NTA geometry and complaint count into a shapefile under the `data` folder.  
 
-> Note: At this point you might notice that spatial software is not as straight forward as a simple `pip install`, If you are stuck with database installation or pacakge installation, please consider adopting **[docker](https://www.docker.com/)**.
+> Note: At this point you might notice that spatial software is not as straight forward as a simple `pip install`, If you are stuck with database installation or pacakge installation, you might consider adopting **[docker](https://www.docker.com/)**. Docker has a steep learning curve, so don't waste too much time on it.
 
 ## Resources
 
 - Reach out to me (bcao @ planning.nyc.gov) if you have any questions, we love people who ask questions.
-- [Postgres+Postgis Docker image](https://registry.hub.docker.com/r/postgis/postgis/)
+- [PostgreSQL Installation Guide](https://www.postgresql.org/download/)
+- [Postgis Docker image](https://registry.hub.docker.com/r/postgis/postgis/)
+- [Postgis Installation Guide](https://postgis.net/workshops/postgis-intro/installation.html)
+- [DigitalOcean Managed Database](https://www.digitalocean.com/products/managed-databases/)
+
+> DigitalOcean is great if you have a lot of trouble with installation, and it offers 100$ of free credit
