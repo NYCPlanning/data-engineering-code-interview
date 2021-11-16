@@ -4,7 +4,7 @@
 
 Welcome to the Data Engineering code interview! This small data challenge is designed to test out your skills in python, sql, git, and geospatial data processing. The challenge will go from easy to difficult, there's no preassure to finish all the tasks, so try your best and get as far as you can!
 
-To start this challenge, create a new **private** repo under your github username. We would like you to include all the code, notes, visualizations, and data inside of the repo. You will have **48 hours** to complete this data challenge. Once you are done, please provide read access to your repo by inviting `@SPTKL` and `@AmandaDoyle`
+To start this challenge, create a new **private** repo under your github username. We would like you to include all the code, notes, visualizations, and data inside of the repo. You will have **48 hours** to complete this data challenge. Once you are done, please provide read access to your repo by inviting `@SashaWeinstein` and `@AmandaDoyle`
 
 > ⚠️ Note: **the repo has to be <ins>private</ins>, otherwise you will be automatically <ins>disqualified</ins>**. Also we will check your commit timestamp to only account for the first 48 hours of coding activities.
 
@@ -90,7 +90,7 @@ A lot of popular databases have geospatial extensions, which makes spatial data 
 
 ## Resources
 
-- Reach out to me (bcao @ planning.nyc.gov) if you have any questions. We love people who ask questions.
+- Reach out to Sasha (aweinstein @ planning.nyc.gov) if you have any questions. We love people who ask questions.
 - [PostgreSQL Installation Guide](https://www.postgresql.org/download/)
 - [Postgis Docker image](https://registry.hub.docker.com/r/postgis/postgis/)
 - [Postgis Installation Guide](https://postgis.net/workshops/postgis-intro/installation.html)
