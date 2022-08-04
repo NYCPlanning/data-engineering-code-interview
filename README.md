@@ -56,15 +56,13 @@ Write a process to download all service request records created in the last *x* 
 
 ### Python Task 2: Data Aggregation
 
-Write a process to produce a time series table based on the data you've pulled so far. It should have the following fields
+Write a process to produce a time series table based on the data you've pulled so far. It should have the following fields. The granularity of the `created_time` column and whether the data is broken down by complaint type should be controlled by parameters passed in from the command line. 
 
 - `created_time`: the timestap of request creation by date and hour OR just date
 - `complaint_type`: the type of the complaint (optional)
 - `count`: the count of service requests by `complaint_type` by `created_date_hour`
 
-The granularity of the `created_time` column and whether the data is broken down by complaint type should be controlled by parameters passed in from the command line. 
-
-Create as many versions of this table that you think is appropriate to show that your code works, and store these versions as appropriately named .csv files.
+Create as many versions of this table that you think is appropriate to show that your code works, and store these versions as appropriately named .csv files. At least one table should be broken down by complaint type as you will use this table in subsequent tasks.
 
 ### Python Task 3: Data Visualization
 
@@ -73,7 +71,7 @@ If you would like to go back and download different tables to visualize, that's 
 
 ### Python Task 4: Spatial data processing
 
-At Data Engineering, we enhance datasets with geospatial attributes, such as point locations and administrative boundaries. To help us better understand the data from **Python Task 1**, we would like you to join the initial raw data to the some NYC administraive boundary of your chosing. Then create a choropleth map of count of complaints of a specific `complaint_type` of your choice.
+At Data Engineering, we enhance datasets with geospatial attributes, such as point locations and administrative boundaries. To help us better understand the data from **Python Task 1**, we would like you to join the initial raw data to the an NYC administraive boundary of your chosing. Then create a choropleth map of count of complaints of a specific `complaint_type` of your choice.
 
 Depending on how you generate the map, you can store the map as a `.png` or `.html` under the `data` folder. Please add a title that accurately tells the reader what they are looking at.
 
@@ -82,16 +80,16 @@ Depending on how you generate the map, you can store the map as a `.png` or `.ht
 
 We ❤️ SQL and docker! At Data Engineering, we work with database containers a lot and we write a lot of fast and simple ETL pipelines using SQL. In this task, you will:
 
-- Set up POSTGIS container using an image
-- Load the `data/raw.csv` into the database and name the table `sample_311`. Make sure this process is captured in a script.
-- Perform the same aggregation in **Task 2** in SQL and store the results in a table (same name as the corresponding csv file).
+- Set up POSTGIS container using the official open-source POSTGIS image
+- Load one of the tables you produced in **Python Task 1** into the database and name the table `sample_311`. Make sure this process is captured in a script.
+- Perform the same aggregation in **Python Task 2** in SQL and store the results in a table (similar name to the corresponding csv file).
 
 ### SQL/Docker Task 2: Spatial SQL
 
 A lot of popular databases have geospatial extensions, which makes spatial data processing in SQL super easy to use. In this task you will:
 
-- Load the adminstrative data you used in python task 4 to the database as a spatial table
-- Do a spatial join in SQL between `sample_311` and the administrative boundaries and add a corresponding column to `sample_311`
+- Load the adminstrative data you used in **Python Task 4** to the database as a spatial table
+- Do a spatial join in SQL between `sample_311` and the administrative boundaries and add an administrative boundary ID column to `sample_311`
 - Perform the same aggregation in **Task 4** and store the result in a table.
 - **Bonus**: export the table with NTA geometry and complaint count into a shapefile under the `data` folder.  
 
