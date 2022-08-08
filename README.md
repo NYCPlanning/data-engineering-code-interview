@@ -48,31 +48,34 @@ This challenge has two halves, a python/bash half with 4 steps and a docker/SQL 
 
 ### Python Task 1: Data Download
 
-To download 311 service request records write a script that takes 2 parameters passed from the command line: number of days and responding agency acronym. For example, if a user wanted to get all service request records created in the last week where DSNY is the responding agency, they would pass `7` and `DSNY` as the parameters. For this exercise, we ask that you download all 311 service requests filed the **last seven days** where **HPD** is the responding agency.  Save the data as a csv named `raw.csv` in a folder called `data`. 
+To download 311 service request records write a proccess that 2 parameters passed from the command line and pulls the data from the API. The process shoul start with a bash script that parses the parameters of number of days and responding agency acronym then calls python code to hit the API. For example, if a user wanted to get all service request records created in the last week where DSNY is the responding agency, they would pass `7` and `DSNY` as the parameters. For this exercise, we ask that you download all 311 service requests filed the **last seven days** where **HPD** is the responding agency.  Save the data as a csv named `raw.csv` in a folder called `data`. 
 
-*Bonus points* if you demostrate your code is dynamic by downloading and saving a series of csv files each with a different timeframe and responding agencgy, and save these files as csvs with a naming convention of your choice.
+*Bonus points* if you demostrate your code is dynamic by downloading and saving a series of csv files each with a different timeframe and responding agency, and programmatically save these files as csvs with a naming convention of your choice.
 
 ### Python Task 2: Data Aggregation
 
 Write a process to produce a time series table based on the `data/raw.csv`file we created in **Task 1** that has the following fields:
 
-- `created_date_time`: the timestap of request creation by date and hour OR just date
+- `created_date_time`/`created_date`: the timestap of request creation by date and hour OR just date
 - `complaint_type`: the type of the complaint
 - `count`: the count of service requests by `complaint_type` by `created_date_hour`
 
 Store this table in a csv under the `data` folder with a csv file name of your choice.
 
-*Bonus points* if you reuse your code from **Python Task 1**, and make one or more of the attributes/fields as optional an paramater.
+*Bonus points* if you can 
+- Control the choice of date+hour or just date and control complaint type from the command line with a bash script that calls your python code
+- Make the complaint type breakdown optional and control this behavior from the command line as well
+- Store multiple tables that pull from different files you cached in python task 1
 
 ### Python Task 3: Data Visualization
 
 Create a multi-line plot to show the total service request counts by `created_date_time` for each `complaint_type`. Make sure you store the image of the plot in the `data` folder as a `.png` file.  
 
-*Bonus points* if your code is reasuable and dynamic, so that you can create and output two or more plots using the csv files you created and saved in **Python Task 1** *Bonus points* as inputs.
+*Bonus points* if your code is reasuable w/r/t different input tables. Show us that it is by saving multiple plots corresponding to the different tables you've cached in python step 2
 
 ### Python Task 4: Spatial data processing
 
-At Data Engineering, we enhance datasets with geospatial attributes, such as point locations and administrative boundaries. To help us better understand the data from **Python Task 1**, we would like you to join the initial raw data to an NYC administraive boundary. Then create a choropleth map of the 7 day total count of complaints where `HPD` is the responding agency fot a specific `complaint_type` of your choice.
+At Data Engineering, we enhance datasets with geospatial attributes, such as point locations and administrative boundaries. To help us better understand the data from **Python Task 1**, we would like you to join the initial raw data to an NYC administrive boundary. Then create a choropleth map of the 7 day total count of complaints where `HPD` is the responding agency fot a specific `complaint_type` of your choice.
 
 Depending on how you generate the map, you can store the map as a `.png` or `.html` under the `data` folder.  Make sure the map includes a legend and title so that it is self explanatory.
 
@@ -91,7 +94,8 @@ A lot of popular databases have geospatial extensions, which makes spatial data 
 - Load the adminstrative boundary data you used in **Python Task 4** into the database as a spatial table
 - Do a spatial join in SQL between `sample_311` and the administrative boundary and add the administrative boundary ID as a column to `sample_311`
 - Perform the same aggregation in **Python Task 4** and store the result in a table.
-- **Bonus**: export the table with the administrative boundary geometry and complaint count into a shapefile under the `data` folder.  
+
+*Bonus points*  export the table with the administrative boundary geometry and complaint count into a shapefile under the `data` folder.  
 
 ## Resources
 
