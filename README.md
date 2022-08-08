@@ -50,6 +50,8 @@ This challenge has two halves, a python/bash half with 4 steps and a docker/SQL 
 
 To download 311 service request records write a script that takes 2 parameters passed from the command line: number of days and responding agency acronym. For example, if a user wanted to get all service request records created in the last week where DSNY is the responding agency, they would pass `7` and `DSNY` as the parameters. For this exercise, we ask that you download all 311 service requests filed the **last seven days** where **HPD** is the responding agency.  Save the data as a csv named `raw.csv` in a folder called `data`. 
 
+*Bonus points* if you demostrate your code is dynamic by downloading and saving a series of csv files each with a different timeframe and responding agencgy, and save these files as csvs with a naming convention of your choice.
+
 ### Python Task 2: Data Aggregation
 
 Write a process to produce a time series table based on the `data/raw.csv`file we created in **Task 1** that has the following fields:
@@ -60,9 +62,13 @@ Write a process to produce a time series table based on the `data/raw.csv`file w
 
 Store this table in a csv under the `data` folder with a csv file name of your choice.
 
+*Bonus points* if you reuse your code from **Python Task 1**, and make one or more of the attributes/fields as optional an paramater.
+
 ### Python Task 3: Data Visualization
 
 Create a multi-line plot to show the total service request counts by `created_date_time` for each `complaint_type`. Make sure you store the image of the plot in the `data` folder as a `.png` file.  
+
+*Bonus points* if your code is reasuable and dynamic, so that you can create and output two or more plots using the csv files you created and saved in **Python Task 1** *Bonus points* as inputs.
 
 ### Python Task 4: Spatial data processing
 
