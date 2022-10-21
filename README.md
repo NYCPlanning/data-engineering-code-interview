@@ -95,7 +95,9 @@ A lot of popular databases have geospatial extensions, which makes spatial data 
 - Do a spatial join in SQL between `sample_311` and the administrative boundary and add the administrative boundary ID as a column to `sample_311`
 - Perform the same aggregation in **Python Task 4** and store the result in a table.
 
-*Bonus points*  export the table with the administrative boundary geometry and complaint count into a shapefile under the `data` folder.  
+*Bonus points* if you can
+- Export the table with the administrative boundary geometry and complaint count into a shapefile under the `data` folder.  
+- Push an image with your setup and code to Docker hub and give the graders instructions to pull it down and run the code. This section will be graded on how easily we can access your image and make it work on your machines. If you don't have time to do that, we would still love to hear about your plan of how you would go about that task.
 
 ## Resources
 
