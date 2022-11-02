@@ -97,7 +97,7 @@ A lot of popular databases have geospatial extensions, which makes spatial data 
 
 *Bonus points* if you can
 - Export the table with the administrative boundary geometry and complaint count into a shapefile under the `data` folder.  
-- Push an image with your setup and code to Docker hub and give the graders instructions to pull it down and run the code. This section will be graded on how easily we can access your image and make it work on your machines. If you don't have time to do that, we would still love to hear about your plan of how you would go about that task.
+- Push an image with your setup and code to Docker hub and give the Data Engineering team instructions to pull it down and run the code. This bonus section will be graded on how easily we can access your image and make it work on your machines. If you don't have time to do that, we would still love to hear about your plan of how you would go about that task.
 
 ## Resources
 
