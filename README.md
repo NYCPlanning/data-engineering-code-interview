@@ -81,6 +81,8 @@ Create a multi-line plot to show the total service request counts by `created_da
 
 At Data Engineering, we enhance datasets with geospatial attributes, such as point locations and administrative boundaries. To help us better understand the data from **Python Task 1**, we would like you to join the initial raw data to an NYC administrive boundary. Then create a choropleth map of the 7 day total count of complaints where `HPD` is the responding agency fot a specific `complaint_type` of your choice.
 
+You need to find a **second geospatial dataset and do a geospatial operation** to assign each call to an area. You can't make a chloropleth of calls by borough, zipcode, community district or city, as that information is already assigned to each record. 
+
 Depending on how you generate the map, you can store the map as a `.png` or `.html` under the `data` folder.  Make sure the map includes a legend and title so that it is self explanatory.
 
 ### SQL/Docker Task 1: Build container and load data
