@@ -48,11 +48,11 @@ This challenge has two halves, a python half with 4 steps and a docker/SQL part 
 
 ### Python Task 1: Data Download
 
-First you need to download 311 service request records. Write a python script to pulls data from the NYC Open DataAPI based two filters. The first filter is on responding agency. The second filter is an integer date filter to only get calls `n` days before the current date. The script should download the associated service requests to python memory and cache to a .csv.
+First you need to download 311 service request records. Write a python script to pulls data from the NYC Open DataAPI based on two filters. The first filter is on responding agency. The second filter is an integer corresponding to the number of days before the current date (i.e. passing "7" means getting records within the past week).  The script should download the associated service requests to python memory and cache to a .csv.
 
-For example, if a user wanted to get all service request records created in the last week where DSNY is the responding agency, they would pass `7` and `DSNY` as the parameters. 
+For example, if a user wanted to get all service request records created in the past five where DSNY is the responding agency, they would pass `DSNY` and `5` as the parameters. 
 
-For this exercise, we ask that you download all 311 service requests filed the **last seven days** where **HPD** is the responding agency.  Save the data as a csv named `raw.csv` in a folder called `data`. 
+For this task, we ask that you download all 311 service requests filed the **last seven days** where **HPD** is the responding agency.  Save the data as a csv named `raw.csv` in a folder called `data`. 
 
 *Bonus points* if you 1) allow different parameters to be passed to your script from the command line and/or 2) write a bash script to take command line args and call the python code. If you do any bonus task, demostrate your code is dynamic by downloading and saving a series of csv files each with a different timeframe and responding agency, and programmatically save these files as csvs with a naming convention of your choice.
 
