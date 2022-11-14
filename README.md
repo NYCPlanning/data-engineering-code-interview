@@ -90,7 +90,7 @@ A lot of popular databases have geospatial extensions, which makes spatial data 
 
 ## Resources
 
-- Reach out to Sasha (aweinstein @ planning.nyc.gov) if you have any questions. We love people who ask questions.
+- Reach out to Te (TDu @ planning.nyc.gov) if you have any questions. We love people who ask questions.
 - [PostgreSQL Installation Guide](https://www.postgresql.org/download/)
 - [Postgis Docker image](https://registry.hub.docker.com/r/postgis/postgis/)
 - [Postgis Installation Guide](https://postgis.net/workshops/postgis-intro/installation.html)
