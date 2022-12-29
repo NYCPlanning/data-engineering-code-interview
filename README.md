@@ -34,10 +34,10 @@ Your code interview will be evaluated based on your repo, so make sure all files
 - [Introduction](#introduction)
   - [Task 1: Data Download](#task-1-data-download)
   - [Task 2: Data Aggregation](#task-2-data-aggregation-via-python)
-  - [Task 3: Data Visualization](#task-3-data-visualization)
-  - [Task 4: Spatial Data Processing](#task-4-spatial-data-processing)
-  - [Task 5: SQL](#task-5-sql)
-  - [Task 6: Spatial SQL](#task-6-spatial-sql)
+  - [Task 3: Data Visualization](#task-3-data-visualization-via-python)
+  - [Task 4: Spatial Data Processing](#task-4-spatial-data-processing-via-python)
+  - [Task 5: SQL](#task-5-Data-Aggregation-via-SQL)
+  - [Task 6: Spatial SQL](#task-6-Spatial-data-processing-via-SQL)
 - [Resources](#resources)
 
 ## Introduction
