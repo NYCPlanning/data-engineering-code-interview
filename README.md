@@ -88,6 +88,12 @@ A lot of popular databases have geospatial extensions, which makes spatial data 
 
 > Note: At this point you might notice that spatial software is not as straight forward as a simple `pip install`. If you are stuck with database installation or pacakge installation, you might consider adopting **[docker](https://www.docker.com/)**. Docker has a steep learning curve, so don't waste too much time on it.
 
+### Bonus
+If you would like to take your work to the next level you will receive bonus points for doing any of the following.
+- Allowing different parameters to be passed to the scripts from the command line and/or writing bash scripts to take command line arguments and call the code.  For example, you can pass the agency value as a parameter when downloading the 311 data.
+- Demonstrating your experience working with Docker by building a Docker image and pushing an image with your setup and code to Docker hub and giving the Data Engineering team instructions on how to pull it down and run the code.  This bonus section will be graded on how easily we can access your image and make it work on your machines.
+If you do not have time or experience doing these "bonus" tasks that's okay!  These tasks are not required and are an optional addition to the tasks described above.  As a guideline, a strong submission of the core tasks will be weighed more heavily than a poorly completed data challenge with bonuses.
+
 ## Resources
 
 - Reach out to Damon (DMcCullough @ planning.nyc.gov) if you have any questions. We love people who ask questions.
