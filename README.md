@@ -14,7 +14,7 @@ Your code interview will be evaluated based on your repo, so make sure all files
 
 - **Project scafolding**: How you name, manage, and organize your files.
 - **Reproducibility**:
-  - Ideally if it runs on your machine, it would also run on mine.
+  - Ideally if it runs on your machine, it would also run on mine. We would recommend that you use Docker.
   - Make sure you document any software dependency, and installation process.
 - **Code**:
   - Clean
