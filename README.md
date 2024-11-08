@@ -4,9 +4,9 @@
 
 Welcome to the Data Engineering code interview! This small data challenge is designed to test out your skills in python, sql, git, and geospatial data processing. The challenge will go from easy to difficult, there's no preassure to finish all the tasks, so try your best and get as far as you can!
 
-To start this challenge, create a new **private** repo under your github username. We would like you to include all the code, notes, visualizations, and data inside of the repo. You will have **48 hours** to complete this data challenge. Once you are done, please provide read access to your repo by inviting `@mbh329`, `@td928` and `@AmandaDoyle`
+To start this challenge, create a new **private** repo under your github username. We would like you to include all the code, notes, visualizations, and data inside of the repo. You will have **48 hours** to complete this data challenge. Once you are done, please provide read access to your repo by inviting `@alexrichey`, `@sf-dcp` and `@AmandaDoyle`
 
-> ⚠️ Note: **the repo has to be `<ins>`private`</ins>`, otherwise you will be automatically `<ins>`disqualified`</ins>`**. Also we will check your commit timestamp to only account for the first 48 hours of coding activities.
+> ⚠️ Note: **the repo has to be private, otherwise you will be automatically disqualified**.
 
 ## What we are looking for
 
@@ -14,7 +14,7 @@ Your code interview will be evaluated based on your repo, so make sure all files
 
 - **Project scafolding**: How you name, manage, and organize your files.
 - **Reproducibility**:
-  - Ideally if it runs on your machine, it would also run on mine.
+  - Ideally if it runs on your machine, it would also run on mine. We would recommend that you use Docker.
   - Make sure you document any software dependency, and installation process.
 - **Code**:
   - Clean
@@ -27,7 +27,6 @@ Your code interview will be evaluated based on your repo, so make sure all files
 - **Project Management**:
   - We want to see how you manage a multi-part project and how you break down the tasks.
   - Feel free to open up issues for yourself / make pull requests and etc so that your code progress is captured and documented.
-  - We highly **discourage** lumpped commits.
 
 ## Table of Content
 
@@ -86,14 +85,9 @@ A lot of popular databases have geospatial extensions, which makes spatial data 
 - Perform the same aggregation in **Task 4** and store the result in a table.
 - **Bonus**: export the table with NTA geometry and complaint count into a shapefile under the `data` folder.
 
-> Note: At this point you might notice that spatial software is not as straight forward as a simple `pip install`. If you are stuck with database installation or pacakge installation, you might consider adopting **[docker](https://www.docker.com/)**. Docker has a steep learning curve, so don't waste too much time on it.
-
 ## Resources
 
-- Reach out to Te (TDu @ planning.nyc.gov) if you have any questions. We love people who ask questions.
+- Reach out to Alex (arichey@planning.nyc.gov) if you have any questions.
 - [PostgreSQL Installation Guide](https://www.postgresql.org/download/)
 - [Postgis Docker image](https://registry.hub.docker.com/r/postgis/postgis/)
 - [Postgis Installation Guide](https://postgis.net/workshops/postgis-intro/installation.html)
-- [DigitalOcean Managed Database](https://www.digitalocean.com/products/managed-databases/)
-
-> DigitalOcean is great if you have a lot of trouble with installation, and it offers 100$ of free credit
